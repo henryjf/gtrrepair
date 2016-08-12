@@ -7,6 +7,13 @@ function config ($stateProvider, $urlRouterProvider, BackandProvider) {
 
   $urlRouterProvider.otherwise('/');
 
+  $stateProvider
+    .state('root', {
+      abstract: true,
+      templateUrl: 'templates/layout.tpl.html',
+      controller: 'NavController as vm'
+    })
+
 
   config.$inject = ['$stateProvider', '$urlRouterProvider', 'BackandProvider'];
   export { config };
