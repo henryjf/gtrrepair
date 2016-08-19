@@ -13,6 +13,23 @@ function config ($stateProvider, $urlRouterProvider, BackandProvider) {
       templateUrl: 'templates/layout.tpl.html',
       controller: 'NavController as vm'
     })
+    .state('root.home', {
+      url: '/',
+      templateUrl: 'templates/home.tpl.html',
+      controller: 'HomeController as vm'
+    })
+
+    .state('root.register', {
+      url: '/register',
+      templateUrl: 'templates/register.tpl.html',
+      controller: 'RegisterController as vm'
+    })
+
+    .state('root.login', {
+      url: '/login',
+      templateUrl: 'templates/logintpl.html',
+      controller: 'LoginController as vm'
+    })
 
 
   config.$inject = ['$stateProvider', '$urlRouterProvider', 'BackandProvider'];
