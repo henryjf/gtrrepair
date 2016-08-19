@@ -29,7 +29,9 @@ function config ($stateProvider, $urlRouterProvider, BackandProvider) {
       url: '/login',
       templateUrl: 'templates/logintpl.html',
       controller: 'LoginController as vm'
-    })
+    });
+
+  }
 
 
   config.$inject = ['$stateProvider', '$urlRouterProvider', 'BackandProvider'];
