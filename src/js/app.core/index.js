@@ -3,9 +3,10 @@ import 'angular-ui-router';
 import 'angular-cookies';
 import './vendors/backand.min';
 
-import {serverConstant} from './constants/server.constant';
+import { serverConstant } from './constants/server.constant';
 
-import {config} from './config';
+import { config } from './config';
+import { run } from './run';
 
 angular
   .module('app.core', ['ui.router', 'ngCookies', 'backand'])
