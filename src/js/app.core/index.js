@@ -6,3 +6,9 @@ import './vendors/backand.min';
 import {serverConstant} from './constants/server.constant';
 
 import {config} from './config';
+
+angular
+  .module('app.core', ['ui.router', 'ngCookies', 'backand'])
+  .config(config)
+  .constant('SERVER', serverConstant)
+  .run(run)
